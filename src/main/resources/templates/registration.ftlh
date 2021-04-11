@@ -13,7 +13,6 @@
                     <option value="DIRECTOR">Директор</option>
                     <option value="SEMI_DIRECTOR">Заместитель директора</option>
                     <option value="SECRETARY">Секретарь</option>
-                    <option value="GUEST">Гость</option>
                 </select> </label></div>
         <div><input type="submit" value="Sign Up"/></div>
     </form>
