@@ -1,8 +1,9 @@
 <#import "parts/page.ftlh" as p>
 
 <@p.page>
-    <h1>Main Page</h1>
-    <h2>${name} - ${role}</h2>
+    <h2>${name}<#if role == "DIRECTOR"> - Директор
+        <#elseif  role == "SEMI_DIRECTOR"> - Заместитель директора
+        <#elseif role == "SECRETARY"> - Секретарь</#if></h2>
     <script>
         function editEmployee(employeeId) {
             let tr = document.getElementById("tr:" + employeeId);
@@ -218,7 +219,7 @@
         </#if>
 
         <form action="/logout" method="post">
-            <button type="submit">Sign out</button>
+            <button type="submit">Выйти</button>
         </form>
     </div>
 </@p.page>
