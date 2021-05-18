@@ -94,7 +94,6 @@
                 tr.append(form);
                 form.submit();
             }
-
         }
 
         function addNewEmployee() {
